@@ -53,6 +53,13 @@
         Game {
             bindings = <&sl 4>;
             key-positions = <34 35>;
+            layers = <0>;
+        };
+
+        Return_To_Base {
+            bindings = <&sl 0>;
+            key-positions = <34 35>;
+            layers = <4>;
         };
     };
 
