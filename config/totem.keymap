@@ -49,6 +49,18 @@
             bindings = <&kp RET>;
             key-positions = <16 18 17>;
         };
+
+        To_Game {
+            bindings = <&sl 4>;
+            key-positions = <34 35>;
+            layers = <0>;
+        };
+
+        To_Base {
+            bindings = <&sl 0>;
+            key-positions = <34 35>;
+            layers = <4>;
+        };
     };
 
     keymap {
