@@ -60,6 +60,20 @@
             key-positions = <34 35>;
             layers = <4>;
         };
+
+        Ctrl_Alt_Del_Combo {
+            bindings = <&Ctrl_Alt_Delete>;
+            key-positions = <34 35 36>;
+        };
+    };
+
+    macros {
+        Ctrl_Alt_Delete: Ctrl_Alt_Delete {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_ALT &kp DELETE>;
+            label = "CTRL_ALT_DELETE";
+        };
     };
 
     keymap {
