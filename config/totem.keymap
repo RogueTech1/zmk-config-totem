@@ -75,6 +75,7 @@
                 <&macro_press>,
                 <&kp LCTRL &kp LEFT_ALT &kp DELETE>,
                 <&macro_wait_time 200>,
+                <&macro_release>,
                 <&kp LCTRL &kp LEFT_ALT &kp DELETE>;
 
             label = "CTRL_ALT_DELETE";
