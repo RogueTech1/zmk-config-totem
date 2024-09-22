@@ -73,9 +73,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp DELETE &kp LEFT_ALT &kp LCTRL>,
-                <&macro_release>,
-                <&kp DELETE &kp LEFT_ALT &kp LCTRL>;
+                <&kp LCTRL &kp LEFT_ALT &kp DELETE>,
+                <&macro_wait_time 200>,
+                <&kp LCTRL &kp LEFT_ALT &kp DELETE>;
 
             label = "CTRL_ALT_DELETE";
         };
