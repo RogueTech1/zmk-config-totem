@@ -65,11 +65,6 @@
             bindings = <&Ctrl_Alt_Delete>;
             key-positions = <32 31 37 20>;
         };
-
-        Alt-F4 {
-            bindings = <&Alt_F4>;
-            key-positions = <32 3>;
-        };
     };
 
     macros {
@@ -84,19 +79,6 @@
                 <&kp LCTRL &kp LEFT_ALT &kp DELETE>;
 
             label = "CTRL_ALT_DELETE";
-        };
-
-        Alt_F4: Alt_F4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT &kp F4>,
-                <&macro_wait_time 200>,
-                <&macro_release>,
-                <&kp LEFT_ALT &kp F4>;
-
-            label = "ALT_F4";
         };
     };
 
