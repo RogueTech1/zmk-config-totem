@@ -71,7 +71,7 @@
         Ctrl_Alt_Delete: Ctrl_Alt_Delete {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp DELETE &kp LEFT_ALT &kp LCTRL>;
+            bindings = <&macro_tap &kp DELETE &kp LEFT_ALT &kp LCTRL>;
 
             label = "CTRL_ALT_DELETE";
         };
