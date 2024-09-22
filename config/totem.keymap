@@ -63,7 +63,7 @@
 
         Ctrl_Alt_Del_Combo {
             bindings = <&Ctrl_Alt_Delete>;
-            key-positions = <34 35 36>;
+            key-positions = <32 31 37 20>;
         };
     };
 
@@ -71,7 +71,12 @@
         Ctrl_Alt_Delete: Ctrl_Alt_Delete {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp DELETE &kp LEFT_ALT &kp LCTRL>, <&macro_release &kp DELETE &kp LEFT_ALT &kp LCTRL>;
+            bindings =
+                <&macro_press>,
+                <&kp DELETE &kp LEFT_ALT &kp LCTRL>,
+                <&macro_release>,
+                <&kp DELETE &kp LEFT_ALT &kp LCTRL>;
+
             label = "CTRL_ALT_DELETE";
         };
     };
